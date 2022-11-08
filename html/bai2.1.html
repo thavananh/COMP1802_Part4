@@ -4,32 +4,43 @@
         <title>Bai 2.1</title>
     </head>
     <style>
-        table, th, td
+        
+        .mytextbox 
         {
-            border: 1px solid black;
+            color: #99FF33; background-color: #006699;
+            border: 1px solid #996633; width: 300px;
+        }
+        table {
+            border: 5px groove #993366;
+            background-color: #FFCCCC;
+            color: #003399;
+        }
+        table td
+        {
+            border: 1px solid #CC9999;
             border-collapse: collapse;
         }
     </style>
     <body>
         <table style="width:100%">
             <tr>
-                <div style="text-align: center;">Đăng ký thành viên CLB YÊU NHẠC</div>
+                <div style="text-align: center; color: #003399;">Đăng ký thành viên CLB YÊU NHẠC</div>
             </tr>
             <tr>
                 <td>Họ tên</td>
-                <td><input type="text" id="txtHoTen"></td>
+                <td><input type="text" id="txtHoTen" class="mytextbox"></td>
             </tr>
             <tr>
                 <td>Tên đăng nhập</td>
-                <td><input type="text" name="" id="txtUserName"></td>
+                <td><input type="text" name="" id="txtUserName" class="mytextbox"></td>
             </tr>
             <tr>
                 <td>Nhập mật khẩu</td>
-                <td><input type="password" name="Password" id="txtPass"></td>
+                <td><input type="password" name="Password" id="txtPass" class="mytextbox"></td>
             </tr>
             <tr>
                 <td>Nhập lại mật khẩu</td>
-                <td><input type="password" name="Repass" id="txtRepass"></td>
+                <td><input type="password" name="Repass" id="txtRepass" class="mytextbox"></td>
             </tr>
             <tr>
                 <td>Phái</td>
@@ -40,21 +51,36 @@
             <tr>
                 <td>Ngoại ngữ</td>
                 <td>
-                    <span>chkAnh <input type="checkbox" name="chkAnh" id="chkAnh"></span>
-                    <span>chkPhap <input type="checkbox" name="chkPhap" id="chkPhap"></span>
-                    <span>chkHoa <input type="checkbox" name="chkHoa" id="chkHoa"></span>
+                    <span>Anh <input type="checkbox" name="chkAnh" id="chkAnh"></span>
+                    <span>Phap <input type="checkbox" name="chkPhap" id="chkPhap"></span>
+                    <span>Hoa <input type="checkbox" name="chkHoa" id="chkHoa"></span>
                 </td>
             </tr>
             <tr>
                 <td>Nghề nghiệp</td>
                 <td>
                     <span>
-                        <select name="cbNgheNghiep" id="cbNgheNghiep">
+                        <select name="cbNgheNghiep" id="cbNgheNghiep" class="mytextbox">
                             <option value="Bạn làm nghề gì ? ">Bạn làm nghề gì ?</option>
                             <option value="Học sinh - Sinh viên">Học sinh - Sinh viên</option>
                             <option value="Giáo viên">Giáo viên</option>
                             <option value="Nhân viên">Nhân viên</option>
                         </select></span>
+                </td>
+            </tr>
+            <tr>
+                <td>Hình</td>
+                <td><input type="file" name="fHinh" id="fHinh" class="mytextbox"></td>
+            </tr>
+            <tr>
+                <td>Sở thích</td>
+                <td><input type="text" name="txtSoThich" id="txtSoThich" class="mytextbox"></td>
+            </tr>
+            <tr>
+                <td colspan="2" style="text-align: center; padding: 2px;">
+                    <span>Đăng ký<input type="submit" name="btnDangKy" id="btnDangKy"></span>
+                    <span>Làm lại<input type="reset" name="btnXoa" id="btnXoa"></span>
+                    <span><input type="hidden" name="NgayDangKy" id="NgayDangKy"></span>
                 </td>
             </tr>
         </table>
