@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Bai 2.1</title>
+    </head>
+    <style>
+        table, th, td
+        {
+            border: 1px solid black;
+            border-collapse: collapse;
+        }
+    </style>
+    <body>
+        <table style="width:100%">
+            <tr>
+                <div style="text-align: center;">Đăng ký thành viên CLB YÊU NHẠC</div>
+            </tr>
+            <tr>
+                <td>Họ tên</td>
+                <td><input type="text" id="txtHoTen"></td>
+            </tr>
+            <tr>
+                <td>Tên đăng nhập</td>
+                <td><input type="text" name="" id="txtUserName"></td>
+            </tr>
+            <tr>
+                <td>Nhập mật khẩu</td>
+                <td><input type="password" name="Password" id="txtPass"></td>
+            </tr>
+            <tr>
+                <td>Nhập lại mật khẩu</td>
+                <td><input type="password" name="Repass" id="txtRepass"></td>
+            </tr>
+            <tr>
+                <td>Phái</td>
+                <td>
+                    <span>Nam <input type="radio", name="rdPhai", id="rdPhai"></span> <span>Nữ <input type="radio" name="rdPhai" id="rdPhai"></span>
+                </td>
+            </tr>
+            <tr>
+                <td>Ngoại ngữ</td>
+                <td>
+                    <span>chkAnh <input type="checkbox" name="chkAnh" id="chkAnh"></span>
+                    <span>chkPhap <input type="checkbox" name="chkPhap" id="chkPhap"></span>
+                    <span>chkHoa <input type="checkbox" name="chkHoa" id="chkHoa"></span>
+                </td>
+            </tr>
+            <tr>
+                <td>Nghề nghiệp</td>
+                <td>
+                    <span>
+                        <select name="cbNgheNghiep" id="cbNgheNghiep">
+                            <option value="Bạn làm nghề gì ? ">Bạn làm nghề gì ?</option>
+                            <option value="Học sinh - Sinh viên">Học sinh - Sinh viên</option>
+                            <option value="Giáo viên">Giáo viên</option>
+                            <option value="Nhân viên">Nhân viên</option>
+                        </select></span>
+                </td>
+            </tr>
+        </table>
+    </body>
+</html>
